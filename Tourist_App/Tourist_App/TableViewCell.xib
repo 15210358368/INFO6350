@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="277" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Tourist_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="277"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="277"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chicago" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-d5-tyL">
+                        <rect key="frame" x="5" y="5" width="359" height="225"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="225" id="4BP-1E-ETt"/>
+                            <constraint firstAttribute="height" constant="225" id="biH-Et-7TC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqA-eb-h4P">
+                        <rect key="frame" x="5" y="235" width="359" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="hR8-bB-Yec"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ct8-d5-tyL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5wc-QN-7JK"/>
+                    <constraint firstAttribute="bottom" secondItem="FqA-eb-h4P" secondAttribute="bottom" constant="5" id="Flt-2w-0Yt"/>
+                    <constraint firstItem="FqA-eb-h4P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Ri8-Lk-Kqp"/>
+                    <constraint firstAttribute="trailing" secondItem="FqA-eb-h4P" secondAttribute="trailing" constant="5" id="ef2-5h-x59"/>
+                    <constraint firstItem="ct8-d5-tyL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="pSS-qo-ZcY"/>
+                    <constraint firstItem="FqA-eb-h4P" firstAttribute="top" secondItem="ct8-d5-tyL" secondAttribute="bottom" constant="5" id="qVE-Aa-IEy"/>
+                    <constraint firstAttribute="trailing" secondItem="ct8-d5-tyL" secondAttribute="trailing" constant="5" id="qhp-Qa-bjB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tblImg" destination="ct8-d5-tyL" id="6FU-RI-Weg"/>
+                <outlet property="tblLabel" destination="FqA-eb-h4P" id="aLx-0h-mag"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="200.55803571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chicago" width="645" height="362.5"/>
+    </resources>
+</document>
